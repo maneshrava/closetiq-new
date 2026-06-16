@@ -23,7 +23,7 @@ function History() {
         const res =
           await fetch(
 
-            "${import.meta.env.VITE_API_URL}/api/history",
+            `${import.meta.env.VITE_API_URL}/api/history",
 
             {
 
