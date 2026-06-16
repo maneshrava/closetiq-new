@@ -23,7 +23,7 @@ function History() {
         const res =
           await fetch(
 
-            "http://localhost:5000/api/history",
+            "${import.meta.env.VITE_API_URL}/api/history",
 
             {
 
@@ -78,7 +78,7 @@ function History() {
         const res =
           await fetch(
 
-            `http://localhost:5000/api/history/${item._id}/favorite`,
+            `${import.meta.env.VITE_API_URL}/api/history/${item._id}/favorite`,
 
             {
 

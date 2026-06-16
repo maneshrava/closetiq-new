@@ -45,7 +45,7 @@ function Dashboard() {
         const clothesRes =
           await fetch(
 
-            "http://localhost:5000/api/clothes",
+            "${import.meta.env.VITE_API_URL}/api/clothes",
 
             {
 
@@ -69,7 +69,7 @@ function Dashboard() {
         const historyRes =
           await fetch(
 
-            "http://localhost:5000/api/ai/history",
+            "${import.meta.env.VITE_API_URL}/api/ai/history",
 
             {
 
@@ -145,7 +145,7 @@ function Dashboard() {
         const res =
           await fetch(
 
-            "http://localhost:5000/api/ai/generate",
+            "${import.meta.env.VITE_API_URL}/api/ai/generate",
 
             {
 

@@ -20,7 +20,7 @@ function Favorites() {
         const res =
           await fetch(
 
-            "http://localhost:5000/api/history/favorites",
+            "${import.meta.env.VITE_API_URL}/api/history/favorites",
 
             {
 
@@ -74,7 +74,7 @@ function Favorites() {
         const res =
           await fetch(
 
-            `http://localhost:5000/api/history/${item._id}/favorite`,
+            `${import.meta.env.VITE_API_URL}/api/history/${item._id}/favorite`,
 
             {
 
